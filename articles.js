@@ -31,7 +31,7 @@ const ARTICLES = [
         "The winter minecraft-pokemon tournament concluded a few weeks after starting."
         + " It was a double elimination style format and I managed to steal second place."
         + "<br/><br/>A huge shoutout to the stars of my team: Whimsicott, Meowscarada and Hisuian Zoroark!"
-        + " And course, any team where I get to use Mega Gardevoir as my ace is bound to place high."
+        + " And of course, any team where I get to use Mega Gardevoir as my ace is bound to place high."
         + "<br/><br/>I think I made some really good plays during this one,"
         + " from Zoroark's Illusion ability to dynamaxing my Whimsicott to take down my opponent's legendary pokemon."
         + " It was definitely the most fun I've had in multiplayer minecraft.",
