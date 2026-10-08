@@ -12,8 +12,8 @@ body {
 
 .container {
     display: grid;
-    grid-template-rows: 25% auto 10%;
-    grid-template-columns: 20fr 70fr;
+    grid-template-rows: 20% 75% 5%;
+    grid-template-columns: 15rem 1fr;
     gap: 0;
 }
 
@@ -28,18 +28,15 @@ header {
     justify-content: center;
     align-items: center;
 
-    margin-bottom: 0.5rem;
-
     grid-row: 1;
     grid-column: span 2;
 }
 
 header > * {
-    margin: auto;
+    margin: 0.5%;
 }
 
 header > img {
-    margin: 1%;
     height: 40%;
 
     box-shadow: 0em 0.3em 0.1em rgba(0, 0, 0, 0.1);
@@ -56,8 +53,9 @@ header > h1 {
 }
 
 header > blockquote {
-    opacity: 0.75;
+    opacity: 0.8;
     font-style: italic;
+    font-size: 0.9em;
 }
 
 footer {
@@ -71,6 +69,9 @@ footer {
 
     grid-row: 3;
     grid-column: span 2;
+
+    /*position: sticky;
+    bottom: 0;*/
 }
 
 /* BODY */
@@ -78,15 +79,19 @@ footer {
 .container > main, aside {
     background-color: #FFFFFF;
     padding: 0.75rem;
+}
 
-    border: 0rem;
-    border: 0.07rem;
-    border-style: solid;
-    border-color: rgba(60, 133, 39, 0.1);
+.container > main {
+    padding-right: 5rem;
 }
 
 .container > aside {
     font-size: 0.75em;
+
+    border: 0rem;
+    border-right: 0.1rem;
+    border-style: solid;
+    border-color: rgba(60, 133, 39, 0.15);
 }
 
 .container > aside h3 {
@@ -95,25 +100,25 @@ footer {
 }
 
 .container > aside > * {
-    margin-top: 1.35rem;
+    margin-top: 1rem;
     margin-bottom: 1.5rem;
 }
 
 #about-me {
     background-color: #E2E8F0;
 
-    border: 1%;
-    border-style: solid;
+    border-style: hidden;
     border-radius: 2.5%;
-    border-color: #E2E8F0;
 }
 
 #about-me * {
     margin: 0.25rem;
+    padding: 0.5rem;
 }
 
 #about-me h3 {
-    color: #333322
+    color: #333322;
+    padding-bottom: 0rem;
 }
 
 .aside-list {
@@ -130,7 +135,64 @@ footer {
     margin-bottom: 0.5rem;
 
     text-decoration: none;
+    color: #2879B8;
     
     list-style: none;
     padding-left: 0;
+}
+
+#articles-container {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: start;
+}
+
+#articles-container > article {
+    height: fit-content;
+    margin-top: 1rem;
+    padding-bottom: 2rem;
+}
+
+/*All articles except the first (column reverse)*/
+#articles-container > article:not(script + article) {
+    border: 0rem;
+    border-bottom: 0.1rem;
+    border-style: solid;
+    border-color: rgba(60, 133, 39, 0.15);
+}
+
+#articles-container > article * {
+    margin: 0;
+}
+
+#articles-container > article > * {
+    margin-bottom: 0.5rem;
+    margin-left: 0.5rem;
+}
+
+#articles-container > article > div > h2 {
+    font-size: 34px;
+    color: #28651C;
+}
+
+#articles-container > article div > p {
+    font-size: 0.9em;
+    color: #667267;
+}
+
+#articles-container > article > img {
+    float: right;
+    height: 10em;
+
+    margin: 0.5rem;
+    margin-bottom: 0rem;
+
+    box-shadow: 0em 0em 0.2em rgba(0, 0, 0, 0.3);
+
+    border-style: hidden;
+    border-radius: 2%;
+}
+
+#articles-container > article:nth-of-type(2n+1) > img {
+    float: left
 }
