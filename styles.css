@@ -83,6 +83,8 @@ footer {
 
 .container > main {
     padding-right: 5rem;
+
+    grid-column: 2;
 }
 
 .container > aside {
@@ -92,6 +94,8 @@ footer {
     border-right: 0.1rem;
     border-style: solid;
     border-color: rgba(60, 133, 39, 0.15);
+
+    grid-column: 1;
 }
 
 .container > aside h3 {
