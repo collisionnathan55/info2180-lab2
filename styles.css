@@ -79,6 +79,8 @@ footer {
 .container > main, aside {
     background-color: #FFFFFF;
     padding: 0.75rem;
+
+    grid-row: 2;
 }
 
 .container > main {
